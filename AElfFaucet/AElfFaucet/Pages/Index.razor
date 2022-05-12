@@ -1,0 +1,72 @@
+﻿@page "/"
+
+<PageTitle>aelf Testnet Faucet</PageTitle>
+
+<header class="bg-dark py-5">
+    <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-6">
+                <div class="text-center my-5">
+                    <h1 class="display-5 fw-bolder text-white mb-2">aelf Testnet Faucet</h1>
+
+                    <div>
+
+                        <p class="lead text-white-50 mb-2">
+                            Get some testnet ELF for the aelf Testnet.
+                            <br />
+                            Testnet ELF has no real value.
+                            <br />
+                            <br />
+                            This faucet is created by Michiel Post for the aelf Legend-X Hackathon. Source code is available on <a href="https://github.com/michielpost/aelfFaucet" target="_blank">GitHub</a>.
+
+                        </p>
+
+                        @if (!Model.HasExtension)
+                        {
+                            <p class="text-white">No NIGHT ELF Extension. Please install <a href="https://chrome.google.com/webstore/detail/aelf-explorer-extension-d/mlmlhipeonlflbcclinpbmcjdnpnmkpf" target="_blank">NIGHT ELF</a>.</p>
+                        }
+                        else if (!Model.IsConnected)
+                        {
+                            <button class="btn btn-primary" @onclick="LoginAsync">Click to initialize connection with NIGHT ELF</button>
+                            <br />
+                            <br />
+
+                            @if (IsLoading)
+                            {
+                                <p class="text-white">Loading...</p>
+                            }
+                        }
+                        else
+                        {
+
+                            <p class="text-white">Your address: @Model.Address</p>
+
+                            <button class="btn btn-primary" @onclick="TakeFromFaucetAsync">Get ELF from faucet!</button>
+                            <br />
+                            @if (TxId != null)
+                            {
+                                <p class="text-white">TxId: <a href="https://explorer-test.aelf.io/tx/@TxId" target="_blank">@TxId</a></p>
+                            }
+
+                            <br />
+                            <br />
+                            <button class="btn btn-primary" @onclick="GetBalance">Refresh Balance</button><br />
+                             <p class="text-white">Trouble? Click the transaction Id above and see if the transaction is mined.</p>
+                            <br />
+                            @if (IsLoading)
+                            {
+                                <p class="text-white">Loading...</p>
+                            }
+                            @if (Model.Balance != null)
+                            {
+                                <p class="text-white">@Model.Balance.ELFBalance ELF</p>
+                                <br />
+                            }
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
