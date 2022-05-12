@@ -17,3 +17,6 @@ The faucet makes it easy to get testnet tokens for the aelf testnet:
 - View the transaction on the explorer, once it's minded:
 - Click on `Refresh Balance`
 - View your new ELF balance
+
+## Refrences
+- https://github.com/AElfProject/aelf-community/blob/main/shares/take-elf-tokens-from-test-net.md
