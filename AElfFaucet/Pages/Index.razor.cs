@@ -24,7 +24,7 @@ namespace AElfFaucet.Pages
             {
                 var testnetUrl = "https://explorer-test.aelf.io/chain";
 
-                await AElfService.InitializeNightElfAsync("Blazor Sample App", testnetUrl);
+                await AElfService.InitializeNightElfAsync("aelf Testnet Faucet", testnetUrl);
 
                 Model.IsConnected = await AElfService.IsConnectedAsync();
             }
