@@ -1,4 +1,5 @@
 # aelf Testnet Faucet
+![aelf Testnet Faucet](images/logo_small.png)  
 Application to interact with the aelf Testnet Faucet
 
 
@@ -17,6 +18,16 @@ The faucet makes it easy to get testnet tokens for the aelf testnet:
 - View the transaction on the explorer, once it's minded:
 - Click on `Refresh Balance`
 - View your new ELF balance
+
+## Screenshots
+Use the testnet faucet
+![Use the testnet faucet](images/screenshot01.png)
+
+Submit the transaction
+![Submit the transaction](images/screenshot02.png)
+
+100 ELF added
+![100 ELF added](images/screenshot03.png)
 
 ## Refrences
 - https://github.com/AElfProject/aelf-community/blob/main/shares/take-elf-tokens-from-test-net.md
