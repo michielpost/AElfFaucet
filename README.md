@@ -19,6 +19,9 @@ The faucet makes it easy to get testnet tokens for the aelf testnet:
 - Click on `Refresh Balance`
 - View your new ELF balance
 
+## Video
+https://vimeo.com/manage/videos/711976849
+
 ## Screenshots
 Use the testnet faucet
 ![Use the testnet faucet](images/screenshot01.png)
