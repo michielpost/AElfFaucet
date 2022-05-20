@@ -8,7 +8,7 @@
   "resources": {
     "assembly": {
       "AElfBlazor.dll": "sha256-\/M0ibHE0bX2EU7JA4KSpV1wRHNjNBwMyhROy9YOfzNE=",
-      "AElfFaucet.dll": "sha256-zL+RhWS4UFvxsY3PbFMDMO9VjWD+P9Q\/ZqHlY5oQraI=",
+      "AElfFaucet.dll": "sha256-2NinaglHrFkbAS2D5yfNHRz7v5Gt+UYpd7jV4PSxnHg=",
       "Microsoft.AspNetCore.Components.dll": "sha256-HXr7Cd3vd6wEcJQGfger6FiEynjLElAyUlN\/FiSpgHo=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-OC7FmUhOVgW4eEWvpQO9kizcPa8kwqwmc\/kQhvP2UAc=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-OfawION\/UfFO75U4pMPDVhHt71EbKuF3qxDeiPFGqKo=",
